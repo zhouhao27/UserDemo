@@ -91,4 +91,11 @@ class RegisterViewController: UIViewController,UserViewBehavior {
         }
     }
     
+    func reset() {
+        emailText.text = ""
+        passwordText.text = ""
+        confirmText.text = ""
+        registerButton.reset()        
+    }
+    
 }

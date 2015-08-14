@@ -16,7 +16,6 @@
 		385B68721B7CD922000BD2E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B686E1B7CD922000BD2E4 /* ProfileViewController.swift */; };
 		385B68731B7CD922000BD2E4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B686F1B7CD922000BD2E4 /* RegisterViewController.swift */; };
 		385B68741B7CD922000BD2E4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68701B7CD922000BD2E4 /* UserViewController.swift */; };
-		385B687E1B7CD96F000BD2E4 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68761B7CD96F000BD2E4 /* ActionButton.swift */; };
 		385B68821B7CD96F000BD2E4 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */; };
 		385B68831B7CD96F000BD2E4 /* PositionToBoundsMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */; };
 		385B68841B7CD96F000BD2E4 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687C1B7CD96F000BD2E4 /* Touchable.swift */; };
@@ -25,18 +24,6 @@
 		385B688E1B7CDA53000BD2E4 /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688B1B7CDA53000BD2E4 /* UIView+ViewController.swift */; };
 		385B688F1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688C1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift */; };
 		385B68901B7CDA53000BD2E4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688D1B7CDA53000BD2E4 /* Utils.swift */; };
-		385B68F51B7CDA73000BD2E4 /* MRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68951B7CDA73000BD2E4 /* MRBlurView.m */; };
-		385B68F61B7CDA73000BD2E4 /* UIImage+MRImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68971B7CDA73000BD2E4 /* UIImage+MRImageEffects.m */; };
-		385B68F71B7CDA73000BD2E4 /* MRActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B689A1B7CDA73000BD2E4 /* MRActivityIndicatorView.m */; };
-		385B68F81B7CDA73000BD2E4 /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B689C1B7CDA73000BD2E4 /* MRCircularProgressView.m */; };
-		385B68F91B7CDA73000BD2E4 /* MRIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B689E1B7CDA73000BD2E4 /* MRIconView.m */; };
-		385B68FA1B7CDA73000BD2E4 /* MRNavigationBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68A01B7CDA73000BD2E4 /* MRNavigationBarProgressView.m */; };
-		385B68FB1B7CDA73000BD2E4 /* MRProgressOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68A21B7CDA73000BD2E4 /* MRProgressOverlayView.m */; };
-		385B68FC1B7CDA73000BD2E4 /* MRProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68A41B7CDA73000BD2E4 /* MRProgressView.m */; };
-		385B68FD1B7CDA73000BD2E4 /* MRStopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68A71B7CDA73000BD2E4 /* MRStopButton.m */; };
-		385B69011B7CDA73000BD2E4 /* MRMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68B31B7CDA73000BD2E4 /* MRMessageInterceptor.m */; };
-		385B69021B7CDA73000BD2E4 /* MRMethodCopier.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68B51B7CDA73000BD2E4 /* MRMethodCopier.m */; };
-		385B69031B7CDA73000BD2E4 /* MRWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68B81B7CDA73000BD2E4 /* MRWeakProxy.m */; };
 		385B69041B7CDA73000BD2E4 /* pop-ios-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 385B68BB1B7CDA73000BD2E4 /* pop-ios-Info.plist */; };
 		385B69051B7CDA73000BD2E4 /* pop-osx-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 385B68BC1B7CDA73000BD2E4 /* pop-osx-Info.plist */; };
 		385B69061B7CDA73000BD2E4 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385B68C01B7CDA73000BD2E4 /* POPAnimatableProperty.mm */; };
@@ -57,12 +44,12 @@
 		385B69151B7CDA73000BD2E4 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385B68E71B7CDA73000BD2E4 /* POPSpringAnimation.mm */; };
 		385B69161B7CDA73000BD2E4 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385B68EB1B7CDA73000BD2E4 /* POPVector.mm */; };
 		385B69171B7CDA73000BD2E4 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 385B68EE1B7CDA73000BD2E4 /* TransformationMatrix.cpp */; };
-		385B69181B7CDA73000BD2E4 /* SingleLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68F31B7CDA73000BD2E4 /* SingleLineTextField.m */; };
 		38BE77E61B7D8E0700F76D9C /* WOWCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */; };
 		38BE77E81B7D8E6D00F76D9C /* WOWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */; };
 		38BE77EA1B7DA72A00F76D9C /* WOWActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */; };
 		38BE77EC1B7DA73500F76D9C /* WOWActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */; };
 		38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */; };
+		38BE77F21B7DE1A300F76D9C /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +64,6 @@
 		385B686E1B7CD922000BD2E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		385B686F1B7CD922000BD2E4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		385B68701B7CD922000BD2E4 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		385B68761B7CD96F000BD2E4 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionToBoundsMapping.swift; sourceTree = "<group>"; };
 		385B687C1B7CD96F000BD2E4 /* Touchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Touchable.swift; sourceTree = "<group>"; };
@@ -86,39 +72,6 @@
 		385B688B1B7CDA53000BD2E4 /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
 		385B688C1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewController.swift"; sourceTree = "<group>"; };
 		385B688D1B7CDA53000BD2E4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		385B68941B7CDA73000BD2E4 /* MRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBlurView.h; sourceTree = "<group>"; };
-		385B68951B7CDA73000BD2E4 /* MRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBlurView.m; sourceTree = "<group>"; };
-		385B68961B7CDA73000BD2E4 /* UIImage+MRImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MRImageEffects.h"; sourceTree = "<group>"; };
-		385B68971B7CDA73000BD2E4 /* UIImage+MRImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MRImageEffects.m"; sourceTree = "<group>"; };
-		385B68991B7CDA73000BD2E4 /* MRActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRActivityIndicatorView.h; sourceTree = "<group>"; };
-		385B689A1B7CDA73000BD2E4 /* MRActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRActivityIndicatorView.m; sourceTree = "<group>"; };
-		385B689B1B7CDA73000BD2E4 /* MRCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCircularProgressView.h; sourceTree = "<group>"; };
-		385B689C1B7CDA73000BD2E4 /* MRCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCircularProgressView.m; sourceTree = "<group>"; };
-		385B689D1B7CDA73000BD2E4 /* MRIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRIconView.h; sourceTree = "<group>"; };
-		385B689E1B7CDA73000BD2E4 /* MRIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRIconView.m; sourceTree = "<group>"; };
-		385B689F1B7CDA73000BD2E4 /* MRNavigationBarProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNavigationBarProgressView.h; sourceTree = "<group>"; };
-		385B68A01B7CDA73000BD2E4 /* MRNavigationBarProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNavigationBarProgressView.m; sourceTree = "<group>"; };
-		385B68A11B7CDA73000BD2E4 /* MRProgressOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgressOverlayView.h; sourceTree = "<group>"; };
-		385B68A21B7CDA73000BD2E4 /* MRProgressOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProgressOverlayView.m; sourceTree = "<group>"; };
-		385B68A31B7CDA73000BD2E4 /* MRProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgressView.h; sourceTree = "<group>"; };
-		385B68A41B7CDA73000BD2E4 /* MRProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProgressView.m; sourceTree = "<group>"; };
-		385B68A51B7CDA73000BD2E4 /* MRStopableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStopableView.h; sourceTree = "<group>"; };
-		385B68A61B7CDA73000BD2E4 /* MRStopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStopButton.h; sourceTree = "<group>"; };
-		385B68A71B7CDA73000BD2E4 /* MRStopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRStopButton.m; sourceTree = "<group>"; };
-		385B68A81B7CDA73000BD2E4 /* MRProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgress.h; sourceTree = "<group>"; };
-		385B68AB1B7CDA73000BD2E4 /* MRActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		385B68AC1B7CDA73000BD2E4 /* MRActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		385B68AD1B7CDA73000BD2E4 /* MRProgressOverlayView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRProgressOverlayView+AFNetworking.h"; sourceTree = "<group>"; };
-		385B68AE1B7CDA73000BD2E4 /* MRProgressOverlayView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRProgressOverlayView+AFNetworking.m"; sourceTree = "<group>"; };
-		385B68AF1B7CDA73000BD2E4 /* MRProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		385B68B01B7CDA73000BD2E4 /* MRProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		385B68B21B7CDA73000BD2E4 /* MRMessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMessageInterceptor.h; sourceTree = "<group>"; };
-		385B68B31B7CDA73000BD2E4 /* MRMessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMessageInterceptor.m; sourceTree = "<group>"; };
-		385B68B41B7CDA73000BD2E4 /* MRMethodCopier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMethodCopier.h; sourceTree = "<group>"; };
-		385B68B51B7CDA73000BD2E4 /* MRMethodCopier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMethodCopier.m; sourceTree = "<group>"; };
-		385B68B61B7CDA73000BD2E4 /* MRProgressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProgressHelper.h; sourceTree = "<group>"; };
-		385B68B71B7CDA73000BD2E4 /* MRWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWeakProxy.h; sourceTree = "<group>"; };
-		385B68B81B7CDA73000BD2E4 /* MRWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWeakProxy.m; sourceTree = "<group>"; };
 		385B68BA1B7CDA73000BD2E4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		385B68BB1B7CDA73000BD2E4 /* pop-ios-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pop-ios-Info.plist"; sourceTree = "<group>"; };
 		385B68BC1B7CDA73000BD2E4 /* pop-osx-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pop-osx-Info.plist"; sourceTree = "<group>"; };
@@ -173,14 +126,13 @@
 		385B68EE1B7CDA73000BD2E4 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationMatrix.cpp; sourceTree = "<group>"; };
 		385B68EF1B7CDA73000BD2E4 /* TransformationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationMatrix.h; sourceTree = "<group>"; };
 		385B68F01B7CDA73000BD2E4 /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
-		385B68F21B7CDA73000BD2E4 /* SingleLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLineTextField.h; sourceTree = "<group>"; };
-		385B68F31B7CDA73000BD2E4 /* SingleLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLineTextField.m; sourceTree = "<group>"; };
 		385B68F41B7CDA73000BD2E4 /* ObjC_Bridging_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC_Bridging_header.h; sourceTree = "<group>"; };
 		38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWCheckbox.swift; path = ../../../WOWCheckbox/Checkbox/src/WOWCheckbox.swift; sourceTree = "<group>"; };
 		38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWTextField.swift; path = ../../../WOWTextField/WOWTextFieldDemo/WOWTextField.swift; sourceTree = "<group>"; };
 		38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWActivityIndicator.swift; path = ../../../WOWActivityIndicator/WOWActivityIndicatorDemo/WOWActivityIndicator.swift; sourceTree = "<group>"; };
 		38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWActionButton.swift; path = ../../../WOWActionButtonDemo/WOWActionButtonDemo/WOWActionButton.swift; sourceTree = "<group>"; };
 		38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWMessageLabel.swift; sourceTree = "<group>"; };
+		38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +182,7 @@
 				385B68621B7CD82C000BD2E4 /* Assets.xcassets */,
 				385B68641B7CD82C000BD2E4 /* LaunchScreen.storyboard */,
 				385B68671B7CD82C000BD2E4 /* Info.plist */,
+				38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */,
 			);
 			path = UserDemo;
 			sourceTree = "<group>";
@@ -241,7 +194,6 @@
 				38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */,
 				38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */,
 				38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */,
-				385B68761B7CD96F000BD2E4 /* ActionButton.swift */,
 				385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */,
 				385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */,
 				38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */,
@@ -262,91 +214,9 @@
 		385B68911B7CDA73000BD2E4 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				385B68921B7CDA73000BD2E4 /* MRProgress */,
 				385B68B91B7CDA73000BD2E4 /* pop */,
-				385B68F11B7CDA73000BD2E4 /* SingleLineTextField */,
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		385B68921B7CDA73000BD2E4 /* MRProgress */ = {
-			isa = PBXGroup;
-			children = (
-				385B68931B7CDA73000BD2E4 /* Blur */,
-				385B68981B7CDA73000BD2E4 /* Components */,
-				385B68A81B7CDA73000BD2E4 /* MRProgress.h */,
-				385B68A91B7CDA73000BD2E4 /* Support */,
-				385B68B11B7CDA73000BD2E4 /* Utils */,
-			);
-			path = MRProgress;
-			sourceTree = "<group>";
-		};
-		385B68931B7CDA73000BD2E4 /* Blur */ = {
-			isa = PBXGroup;
-			children = (
-				385B68941B7CDA73000BD2E4 /* MRBlurView.h */,
-				385B68951B7CDA73000BD2E4 /* MRBlurView.m */,
-				385B68961B7CDA73000BD2E4 /* UIImage+MRImageEffects.h */,
-				385B68971B7CDA73000BD2E4 /* UIImage+MRImageEffects.m */,
-			);
-			path = Blur;
-			sourceTree = "<group>";
-		};
-		385B68981B7CDA73000BD2E4 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				385B68991B7CDA73000BD2E4 /* MRActivityIndicatorView.h */,
-				385B689A1B7CDA73000BD2E4 /* MRActivityIndicatorView.m */,
-				385B689B1B7CDA73000BD2E4 /* MRCircularProgressView.h */,
-				385B689C1B7CDA73000BD2E4 /* MRCircularProgressView.m */,
-				385B689D1B7CDA73000BD2E4 /* MRIconView.h */,
-				385B689E1B7CDA73000BD2E4 /* MRIconView.m */,
-				385B689F1B7CDA73000BD2E4 /* MRNavigationBarProgressView.h */,
-				385B68A01B7CDA73000BD2E4 /* MRNavigationBarProgressView.m */,
-				385B68A11B7CDA73000BD2E4 /* MRProgressOverlayView.h */,
-				385B68A21B7CDA73000BD2E4 /* MRProgressOverlayView.m */,
-				385B68A31B7CDA73000BD2E4 /* MRProgressView.h */,
-				385B68A41B7CDA73000BD2E4 /* MRProgressView.m */,
-				385B68A51B7CDA73000BD2E4 /* MRStopableView.h */,
-				385B68A61B7CDA73000BD2E4 /* MRStopButton.h */,
-				385B68A71B7CDA73000BD2E4 /* MRStopButton.m */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		385B68A91B7CDA73000BD2E4 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				385B68AA1B7CDA73000BD2E4 /* AFNetworking */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		385B68AA1B7CDA73000BD2E4 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				385B68AB1B7CDA73000BD2E4 /* MRActivityIndicatorView+AFNetworking.h */,
-				385B68AC1B7CDA73000BD2E4 /* MRActivityIndicatorView+AFNetworking.m */,
-				385B68AD1B7CDA73000BD2E4 /* MRProgressOverlayView+AFNetworking.h */,
-				385B68AE1B7CDA73000BD2E4 /* MRProgressOverlayView+AFNetworking.m */,
-				385B68AF1B7CDA73000BD2E4 /* MRProgressView+AFNetworking.h */,
-				385B68B01B7CDA73000BD2E4 /* MRProgressView+AFNetworking.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		385B68B11B7CDA73000BD2E4 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				385B68B21B7CDA73000BD2E4 /* MRMessageInterceptor.h */,
-				385B68B31B7CDA73000BD2E4 /* MRMessageInterceptor.m */,
-				385B68B41B7CDA73000BD2E4 /* MRMethodCopier.h */,
-				385B68B51B7CDA73000BD2E4 /* MRMethodCopier.m */,
-				385B68B61B7CDA73000BD2E4 /* MRProgressHelper.h */,
-				385B68B71B7CDA73000BD2E4 /* MRWeakProxy.h */,
-				385B68B81B7CDA73000BD2E4 /* MRWeakProxy.m */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		385B68B91B7CDA73000BD2E4 /* pop */ = {
@@ -416,15 +286,6 @@
 				385B68F01B7CDA73000BD2E4 /* UnitBezier.h */,
 			);
 			path = WebCore;
-			sourceTree = "<group>";
-		};
-		385B68F11B7CDA73000BD2E4 /* SingleLineTextField */ = {
-			isa = PBXGroup;
-			children = (
-				385B68F21B7CDA73000BD2E4 /* SingleLineTextField.h */,
-				385B68F31B7CDA73000BD2E4 /* SingleLineTextField.m */,
-			);
-			path = SingleLineTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,49 +361,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				38BE77E61B7D8E0700F76D9C /* WOWCheckbox.swift in Sources */,
-				385B68F71B7CDA73000BD2E4 /* MRActivityIndicatorView.m in Sources */,
 				385B688F1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift in Sources */,
 				38BE77E81B7D8E6D00F76D9C /* WOWTextField.swift in Sources */,
-				385B68FB1B7CDA73000BD2E4 /* MRProgressOverlayView.m in Sources */,
 				385B68821B7CD96F000BD2E4 /* PassthroughView.swift in Sources */,
 				385B690F1B7CDA73000BD2E4 /* POPCustomAnimation.mm in Sources */,
 				385B690D1B7CDA73000BD2E4 /* POPBasicAnimation.mm in Sources */,
-				385B68F91B7CDA73000BD2E4 /* MRIconView.m in Sources */,
 				385B68711B7CD922000BD2E4 /* LoginViewController.swift in Sources */,
-				385B68FA1B7CDA73000BD2E4 /* MRNavigationBarProgressView.m in Sources */,
 				385B688E1B7CDA53000BD2E4 /* UIView+ViewController.swift in Sources */,
-				385B68F61B7CDA73000BD2E4 /* UIImage+MRImageEffects.m in Sources */,
 				385B69141B7CDA73000BD2E4 /* POPPropertyAnimation.mm in Sources */,
 				385B69081B7CDA73000BD2E4 /* POPAnimationEvent.mm in Sources */,
 				385B68871B7CD9A2000BD2E4 /* ActionViewController.swift in Sources */,
-				385B69021B7CDA73000BD2E4 /* MRMethodCopier.m in Sources */,
 				385B68741B7CD922000BD2E4 /* UserViewController.swift in Sources */,
 				385B69071B7CDA73000BD2E4 /* POPAnimation.mm in Sources */,
+				38BE77F21B7DE1A300F76D9C /* ResetPasswordViewController.swift in Sources */,
 				385B68731B7CD922000BD2E4 /* RegisterViewController.swift in Sources */,
 				385B685E1B7CD82C000BD2E4 /* ViewController.swift in Sources */,
 				385B68901B7CDA53000BD2E4 /* Utils.swift in Sources */,
 				385B69101B7CDA73000BD2E4 /* POPDecayAnimation.mm in Sources */,
 				385B69121B7CDA73000BD2E4 /* POPLayerExtras.mm in Sources */,
-				385B69031B7CDA73000BD2E4 /* MRWeakProxy.m in Sources */,
 				385B690E1B7CDA73000BD2E4 /* POPCGUtils.mm in Sources */,
 				385B68721B7CD922000BD2E4 /* ProfileViewController.swift in Sources */,
-				385B69181B7CDA73000BD2E4 /* SingleLineTextField.m in Sources */,
 				38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */,
-				385B68F81B7CDA73000BD2E4 /* MRCircularProgressView.m in Sources */,
 				385B69161B7CDA73000BD2E4 /* POPVector.mm in Sources */,
 				385B685C1B7CD82C000BD2E4 /* AppDelegate.swift in Sources */,
-				385B687E1B7CD96F000BD2E4 /* ActionButton.swift in Sources */,
 				385B68851B7CD96F000BD2E4 /* UIColor+Hex.swift in Sources */,
-				385B68F51B7CDA73000BD2E4 /* MRBlurView.m in Sources */,
 				38BE77EC1B7DA73500F76D9C /* WOWActionButton.swift in Sources */,
-				385B69011B7CDA73000BD2E4 /* MRMessageInterceptor.m in Sources */,
 				385B69091B7CDA73000BD2E4 /* POPAnimationExtras.mm in Sources */,
 				385B69131B7CDA73000BD2E4 /* POPMath.mm in Sources */,
-				385B68FD1B7CDA73000BD2E4 /* MRStopButton.m in Sources */,
 				385B69171B7CDA73000BD2E4 /* TransformationMatrix.cpp in Sources */,
 				385B690C1B7CDA73000BD2E4 /* POPAnimator.mm in Sources */,
 				385B690B1B7CDA73000BD2E4 /* POPAnimationTracer.mm in Sources */,
-				385B68FC1B7CDA73000BD2E4 /* MRProgressView.m in Sources */,
 				385B69061B7CDA73000BD2E4 /* POPAnimatableProperty.mm in Sources */,
 				385B690A1B7CDA73000BD2E4 /* POPAnimationRuntime.mm in Sources */,
 				385B69111B7CDA73000BD2E4 /* POPGeometry.mm in Sources */,

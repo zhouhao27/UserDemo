@@ -15,6 +15,8 @@ protocol UserProtocol {
     func onLoginSuccess()
     func onRegisterSuccess()
     func onLogout()
+    func onSwitchToResetPassword()
+    func onSwitchToLoginFromResetPassword()
 }
 
 protocol UserViewBehavior {
@@ -23,17 +25,17 @@ protocol UserViewBehavior {
 
 class UserViewController: ActionViewController, UserProtocol {
 
-    var loginController     : LoginViewController!
-    var registerController  : RegisterViewController!
-    var profileController   : ProfileViewController!
+    var loginController         : LoginViewController!
+    var registerController      : RegisterViewController!
+    var profileController       : ProfileViewController!
+    var resetPasswordController : ResetPasswordViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.registerController.view.hidden = true
-//        self.profileController.view.hidden = true
         self.registerController.view.alpha = 0
         self.profileController.view.alpha = 0
+        self.resetPasswordController.view.alpha = 0
 
         self.view.backgroundColor = UIColor.clearColor()
     }
@@ -54,6 +56,12 @@ class UserViewController: ActionViewController, UserProtocol {
             
             self.profileController = segue.destinationViewController as! ProfileViewController
             self.profileController.userDelegate = self
+            
+        } else if segue.identifier == "ResetPasswordViewController" {
+            
+            self.resetPasswordController = segue.destinationViewController as! ResetPasswordViewController
+            self.resetPasswordController.userDelegate = self
+            
         }
     }
     
@@ -103,6 +111,25 @@ class UserViewController: ActionViewController, UserProtocol {
     func onRegisterSuccess() {
 
         print("register successfully")
+        // switch back to login
+        
+        let frame = self.loginController.view.frame
+        
+        UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .CurveEaseInOut, animations: { () -> Void in
+            self.loginController.view.alpha = 1
+            self.registerController.view.alpha = 0
+            }) { (finish) -> Void in
+                
+                self.registerController.reset()
+        }
+        self.loginController.view.frame = CGRectMake(frame.origin.x, -frame.size.height, frame.size.width, frame.size.height)
+        UIView.animateWithDuration(0.4, delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: { () -> Void in
+            
+            self.loginController.view.frame = frame
+            
+            }) { (finished) -> Void in
+        }
+        
     }
     
     func onLogout() {
@@ -123,7 +150,27 @@ class UserViewController: ActionViewController, UserProtocol {
             self.loginController.view.frame = frame
         }) { (finished) -> Void in
                 
-        }        
+        }
+    }
+    
+    func onSwitchToResetPassword() {
+        
+        self.resetPasswordController.view.alpha = 1
+        UIView.transitionFromView(self.loginController.view, toView: self.resetPasswordController.view, duration: 0.4, options: UIViewAnimationOptions([.TransitionFlipFromRight, .CurveEaseInOut])) { (finished) -> Void in
+            
+            self.loginController.view.alpha = 0
+        }
         
     }
+    
+    func onSwitchToLoginFromResetPassword() {
+
+        self.loginController.view.alpha = 1
+        UIView.transitionFromView(self.resetPasswordController.view, toView: self.loginController.view, duration: 0.4, options: UIViewAnimationOptions([.TransitionFlipFromRight, .CurveEaseInOut])) { (finished) -> Void in
+            
+            self.resetPasswordController.view.alpha = 0
+        }
+        
+    }
+    
 }

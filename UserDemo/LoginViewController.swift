@@ -17,12 +17,8 @@ class LoginViewController: UIViewController,UserViewBehavior {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
-    var originalLoginButtonFrame : CGRect!
-        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.originalLoginButtonFrame = self.loginButton.frame
         
         self.view.backgroundColor = UIColor.darkTextColor().colorWithAlphaComponent(0.6)
         self.emailText.addTarget(self, action: "startEditing:", forControlEvents: .EditingChanged)
@@ -71,6 +67,11 @@ class LoginViewController: UIViewController,UserViewBehavior {
         self.userDelegate.onSwitchToRegister()
     }
         
+    @IBAction func onResetPassword(sender: AnyObject) {
+        
+        self.userDelegate.onSwitchToResetPassword()
+    }
+    
     // MARK: UITextField target
     func startEditing(textField : UITextField) {
         

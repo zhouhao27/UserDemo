@@ -9,8 +9,6 @@
 #ifndef ObjC_Bridging_header_h
 #define ObjC_Bridging_header_h
 
-//#import "SingleLineTextField.h"
-#import "MRProgress.h"
 #import <pop/POP.h>
 
 #endif /* ObjC_Bridging_header_h */
