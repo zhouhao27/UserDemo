@@ -24,7 +24,17 @@ class Utility {
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluateWithObject(testStr)
-    }    
+    }
+    
+    class func errorText(textField : UITextField) {
+        
+        let shake = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
+        shake.springBounciness = 20
+        shake.velocity = 3000
+        
+        textField.layer.pop_addAnimation(shake, forKey: "")
+        
+    }
 }
 
 /*

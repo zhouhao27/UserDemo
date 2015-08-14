@@ -17,14 +17,11 @@
 		385B68731B7CD922000BD2E4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B686F1B7CD922000BD2E4 /* RegisterViewController.swift */; };
 		385B68741B7CD922000BD2E4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68701B7CD922000BD2E4 /* UserViewController.swift */; };
 		385B687E1B7CD96F000BD2E4 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68761B7CD96F000BD2E4 /* ActionButton.swift */; };
-		385B68801B7CD96F000BD2E4 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68781B7CD96F000BD2E4 /* Checkbox.swift */; };
-		385B68811B7CD96F000BD2E4 /* Checkbox.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385B68791B7CD96F000BD2E4 /* Checkbox.xcassets */; };
 		385B68821B7CD96F000BD2E4 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */; };
 		385B68831B7CD96F000BD2E4 /* PositionToBoundsMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */; };
 		385B68841B7CD96F000BD2E4 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687C1B7CD96F000BD2E4 /* Touchable.swift */; };
 		385B68851B7CD96F000BD2E4 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B687D1B7CD96F000BD2E4 /* UIColor+Hex.swift */; };
 		385B68871B7CD9A2000BD2E4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68861B7CD9A2000BD2E4 /* ActionViewController.swift */; };
-		385B68891B7CD9CF000BD2E4 /* UserInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B68881B7CD9CF000BD2E4 /* UserInputTextField.swift */; };
 		385B688E1B7CDA53000BD2E4 /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688B1B7CDA53000BD2E4 /* UIView+ViewController.swift */; };
 		385B688F1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688C1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift */; };
 		385B68901B7CDA53000BD2E4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B688D1B7CDA53000BD2E4 /* Utils.swift */; };
@@ -61,6 +58,11 @@
 		385B69161B7CDA73000BD2E4 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 385B68EB1B7CDA73000BD2E4 /* POPVector.mm */; };
 		385B69171B7CDA73000BD2E4 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 385B68EE1B7CDA73000BD2E4 /* TransformationMatrix.cpp */; };
 		385B69181B7CDA73000BD2E4 /* SingleLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B68F31B7CDA73000BD2E4 /* SingleLineTextField.m */; };
+		38BE77E61B7D8E0700F76D9C /* WOWCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */; };
+		38BE77E81B7D8E6D00F76D9C /* WOWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */; };
+		38BE77EA1B7DA72A00F76D9C /* WOWActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */; };
+		38BE77EC1B7DA73500F76D9C /* WOWActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */; };
+		38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,14 +78,11 @@
 		385B686F1B7CD922000BD2E4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		385B68701B7CD922000BD2E4 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		385B68761B7CD96F000BD2E4 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		385B68781B7CD96F000BD2E4 /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		385B68791B7CD96F000BD2E4 /* Checkbox.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Checkbox.xcassets; sourceTree = "<group>"; };
 		385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionToBoundsMapping.swift; sourceTree = "<group>"; };
 		385B687C1B7CD96F000BD2E4 /* Touchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Touchable.swift; sourceTree = "<group>"; };
 		385B687D1B7CD96F000BD2E4 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		385B68861B7CD9A2000BD2E4 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		385B68881B7CD9CF000BD2E4 /* UserInputTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputTextField.swift; sourceTree = "<group>"; };
 		385B688B1B7CDA53000BD2E4 /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
 		385B688C1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewController.swift"; sourceTree = "<group>"; };
 		385B688D1B7CDA53000BD2E4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -177,6 +176,11 @@
 		385B68F21B7CDA73000BD2E4 /* SingleLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLineTextField.h; sourceTree = "<group>"; };
 		385B68F31B7CDA73000BD2E4 /* SingleLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLineTextField.m; sourceTree = "<group>"; };
 		385B68F41B7CDA73000BD2E4 /* ObjC_Bridging_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC_Bridging_header.h; sourceTree = "<group>"; };
+		38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWCheckbox.swift; path = ../../../WOWCheckbox/Checkbox/src/WOWCheckbox.swift; sourceTree = "<group>"; };
+		38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWTextField.swift; path = ../../../WOWTextField/WOWTextFieldDemo/WOWTextField.swift; sourceTree = "<group>"; };
+		38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWActivityIndicator.swift; path = ../../../WOWActivityIndicator/WOWActivityIndicatorDemo/WOWActivityIndicator.swift; sourceTree = "<group>"; };
+		38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWActionButton.swift; path = ../../../WOWActionButtonDemo/WOWActionButtonDemo/WOWActionButton.swift; sourceTree = "<group>"; };
+		38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWMessageLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +216,6 @@
 				385B68911B7CDA73000BD2E4 /* Libs */,
 				385B68F41B7CDA73000BD2E4 /* ObjC_Bridging_header.h */,
 				385B688A1B7CDA53000BD2E4 /* Utils */,
-				385B68881B7CD9CF000BD2E4 /* UserInputTextField.swift */,
 				385B68861B7CD9A2000BD2E4 /* ActionViewController.swift */,
 				385B68751B7CD96F000BD2E4 /* Components */,
 				385B687C1B7CD96F000BD2E4 /* Touchable.swift */,
@@ -234,11 +237,14 @@
 		385B68751B7CD96F000BD2E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */,
+				38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */,
+				38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */,
+				38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */,
 				385B68761B7CD96F000BD2E4 /* ActionButton.swift */,
-				385B68781B7CD96F000BD2E4 /* Checkbox.swift */,
-				385B68791B7CD96F000BD2E4 /* Checkbox.xcassets */,
 				385B687A1B7CD96F000BD2E4 /* PassthroughView.swift */,
 				385B687B1B7CD96F000BD2E4 /* PositionToBoundsMapping.swift */,
+				38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -481,7 +487,6 @@
 				385B69041B7CDA73000BD2E4 /* pop-ios-Info.plist in Resources */,
 				385B69051B7CDA73000BD2E4 /* pop-osx-Info.plist in Resources */,
 				385B68661B7CD82C000BD2E4 /* LaunchScreen.storyboard in Resources */,
-				385B68811B7CD96F000BD2E4 /* Checkbox.xcassets in Resources */,
 				385B68631B7CD82C000BD2E4 /* Assets.xcassets in Resources */,
 				385B68611B7CD82C000BD2E4 /* Main.storyboard in Resources */,
 			);
@@ -494,9 +499,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BE77E61B7D8E0700F76D9C /* WOWCheckbox.swift in Sources */,
 				385B68F71B7CDA73000BD2E4 /* MRActivityIndicatorView.m in Sources */,
 				385B688F1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift in Sources */,
-				385B68801B7CD96F000BD2E4 /* Checkbox.swift in Sources */,
+				38BE77E81B7D8E6D00F76D9C /* WOWTextField.swift in Sources */,
 				385B68FB1B7CDA73000BD2E4 /* MRProgressOverlayView.m in Sources */,
 				385B68821B7CD96F000BD2E4 /* PassthroughView.swift in Sources */,
 				385B690F1B7CDA73000BD2E4 /* POPCustomAnimation.mm in Sources */,
@@ -521,16 +527,17 @@
 				385B690E1B7CDA73000BD2E4 /* POPCGUtils.mm in Sources */,
 				385B68721B7CD922000BD2E4 /* ProfileViewController.swift in Sources */,
 				385B69181B7CDA73000BD2E4 /* SingleLineTextField.m in Sources */,
+				38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */,
 				385B68F81B7CDA73000BD2E4 /* MRCircularProgressView.m in Sources */,
 				385B69161B7CDA73000BD2E4 /* POPVector.mm in Sources */,
 				385B685C1B7CD82C000BD2E4 /* AppDelegate.swift in Sources */,
 				385B687E1B7CD96F000BD2E4 /* ActionButton.swift in Sources */,
 				385B68851B7CD96F000BD2E4 /* UIColor+Hex.swift in Sources */,
 				385B68F51B7CDA73000BD2E4 /* MRBlurView.m in Sources */,
+				38BE77EC1B7DA73500F76D9C /* WOWActionButton.swift in Sources */,
 				385B69011B7CDA73000BD2E4 /* MRMessageInterceptor.m in Sources */,
 				385B69091B7CDA73000BD2E4 /* POPAnimationExtras.mm in Sources */,
 				385B69131B7CDA73000BD2E4 /* POPMath.mm in Sources */,
-				385B68891B7CD9CF000BD2E4 /* UserInputTextField.swift in Sources */,
 				385B68FD1B7CDA73000BD2E4 /* MRStopButton.m in Sources */,
 				385B69171B7CDA73000BD2E4 /* TransformationMatrix.cpp in Sources */,
 				385B690C1B7CDA73000BD2E4 /* POPAnimator.mm in Sources */,
@@ -539,6 +546,7 @@
 				385B69061B7CDA73000BD2E4 /* POPAnimatableProperty.mm in Sources */,
 				385B690A1B7CDA73000BD2E4 /* POPAnimationRuntime.mm in Sources */,
 				385B69111B7CDA73000BD2E4 /* POPGeometry.mm in Sources */,
+				38BE77EA1B7DA72A00F76D9C /* WOWActivityIndicator.swift in Sources */,
 				385B68831B7CD96F000BD2E4 /* PositionToBoundsMapping.swift in Sources */,
 				385B68841B7CD96F000BD2E4 /* Touchable.swift in Sources */,
 				385B69151B7CDA73000BD2E4 /* POPSpringAnimation.mm in Sources */,
@@ -693,6 +701,7 @@
 				385B686C1B7CD82C000BD2E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

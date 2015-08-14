@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController,UserViewBehavior {
 
-    @IBOutlet var logoutButton: ActionButton!
+    @IBOutlet var logoutButton: WOWActionButton!
     var userDelegate : UserProtocol!
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController,UserViewBehavior {
         
         // simulate login success
         Utility.delay(1.0) { () -> () in
-            self.logoutButton.finishActionAnimated(true, toView: self.view)
+            self.logoutButton.stopActionToExpand(self.view)
             self.userDelegate.onLogout()
         }
     }
