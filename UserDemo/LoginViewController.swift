@@ -62,7 +62,6 @@ class LoginViewController: UIViewController,UserViewBehavior {
         Utility.delay(2.0) { () -> () in
             
             self.loginButton.stopActionToExpand(self.view)
-            //self.loginButton.stopActionToReset(false)
             self.userDelegate.onLoginSuccess()
         }
     }
@@ -71,21 +70,20 @@ class LoginViewController: UIViewController,UserViewBehavior {
         
         self.userDelegate.onSwitchToRegister()
     }
-    
-    // reset to it's original status
-    func reset() {
-    
-        self.loginButton.frame = originalLoginButtonFrame
-        self.loginButton.reset()
-        print(self.loginButton.frame)
-    }
-    
+        
     // MARK: UITextField target
     func startEditing(textField : UITextField) {
         
         if textField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 {
             messageLabel.errorMessage("")
         }
-    }    
+    }
+    
+    func reset() {
+    
+        emailText.text = ""
+        passwordText.text = ""
+        loginButton.reset()
+    }
         
 }

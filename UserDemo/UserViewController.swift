@@ -30,8 +30,10 @@ class UserViewController: ActionViewController, UserProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.registerController.view.hidden = true
-        self.profileController.view.hidden = true
+//        self.registerController.view.hidden = true
+//        self.profileController.view.hidden = true
+        self.registerController.view.alpha = 0
+        self.profileController.view.alpha = 0
 
         self.view.backgroundColor = UIColor.clearColor()
     }
@@ -57,19 +59,19 @@ class UserViewController: ActionViewController, UserProtocol {
     
     func onSwitchToRegister() {
     
-        self.registerController.view.hidden = false
+        self.registerController.view.alpha = 1
         UIView.transitionFromView(self.loginController.view, toView: self.registerController.view, duration: 0.4, options: UIViewAnimationOptions([.TransitionFlipFromLeft,.CurveEaseInOut])) { (finished) -> Void in
             
-            self.loginController.view.hidden = true
+            self.loginController.view.alpha = 0
         }
     }
     
     func onSwitchToLogin() {
         
-        self.loginController.view.hidden = false
+        self.loginController.view.alpha = 1
         UIView.transitionFromView(self.registerController.view, toView: self.loginController.view, duration: 0.4, options: UIViewAnimationOptions([.TransitionFlipFromRight, .CurveEaseInOut])) { (finished) -> Void in
             
-            self.registerController.view.hidden = true
+            self.registerController.view.alpha = 0
         }
         
     }
@@ -77,15 +79,23 @@ class UserViewController: ActionViewController, UserProtocol {
     func onLoginSuccess() {
 
         let frame = self.profileController.view.frame
-        self.profileController.view.hidden = false
-        self.loginController.view.hidden = true
+
+        UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .CurveEaseInOut, animations: { () -> Void in
+            self.profileController.view.alpha = 1
+            self.loginController.view.alpha = 0
+        }) { (finish) -> Void in
+
+            // should reset login button size
+            self.loginController.reset()
+        }
         self.profileController.view.frame = CGRectMake(frame.origin.x, -frame.size.height, frame.size.width, frame.size.height)
-        UIView.animateWithDuration(0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: { () -> Void in
+        UIView.animateWithDuration(0.4, delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: { () -> Void in
             
             self.profileController.view.frame = frame
             
         }) { (finished) -> Void in
 
+            
         }
 
     }
@@ -98,10 +108,18 @@ class UserViewController: ActionViewController, UserProtocol {
     func onLogout() {
         
         let frame = self.loginController.view.frame
-        self.loginController.view.hidden = false
-        self.profileController.view.hidden = true
+        
+        UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .CurveEaseInOut, animations: { () -> Void in
+        
+            self.loginController.view.alpha = 1
+            self.profileController.view.alpha = 0
+
+        }) { (finish) -> Void in
+                
+            self.profileController.reset()
+        }
         self.loginController.view.frame = CGRectMake(frame.origin.x, -frame.size.height, frame.size.width, frame.size.height)
-        UIView.animateWithDuration(0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: { () -> Void in
+        UIView.animateWithDuration(0.4, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: { () -> Void in
             self.loginController.view.frame = frame
         }) { (finished) -> Void in
                 

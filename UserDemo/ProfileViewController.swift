@@ -32,4 +32,8 @@ class ProfileViewController: UIViewController,UserViewBehavior {
             self.userDelegate.onLogout()
         }
     }
+    
+    func reset() {
+        logoutButton.reset()
+    }
 }
