@@ -27,7 +27,8 @@ class Utility {
     }
     
     class func errorText(textField : UITextField) {
-                
+
+/*
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.1
         animation.repeatCount = 2
@@ -35,5 +36,7 @@ class Utility {
         animation.fromValue = NSValue(CGPoint: CGPointMake(textField.center.x - 15, textField.center.y))
         animation.toValue = NSValue(CGPoint: CGPointMake(textField.center.x + 15, textField.center.y))
         textField.layer.addAnimation(animation, forKey: "position")
+*/
+        textField.shake()
     }
 }

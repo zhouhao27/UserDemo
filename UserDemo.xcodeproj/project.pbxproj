@@ -30,6 +30,7 @@
 		38BE77E81B7D8E6D00F76D9C /* WOWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */; };
 		38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */; };
 		38BE77F21B7DE1A300F76D9C /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */; };
+		38C0AE681B819CCB00CD01F7 /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C0AE671B819CCB00CD01F7 /* UITextField+Shake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWTextField.swift; path = ../../../WOWTextField/WOWTextFieldDemo/WOWTextField.swift; sourceTree = "<group>"; };
 		38BE77ED1B7DBD2900F76D9C /* WOWMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWMessageLabel.swift; sourceTree = "<group>"; };
 		38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		38C0AE671B819CCB00CD01F7 /* UITextField+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Shake.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		385B68751B7CD96F000BD2E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				38C0AE671B819CCB00CD01F7 /* UITextField+Shake.swift */,
 				381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */,
 				38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */,
 				38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */,
@@ -228,6 +231,7 @@
 				385B68721B7CD922000BD2E4 /* ProfileViewController.swift in Sources */,
 				38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */,
 				385B685C1B7CD82C000BD2E4 /* AppDelegate.swift in Sources */,
+				38C0AE681B819CCB00CD01F7 /* UITextField+Shake.swift in Sources */,
 				385B68851B7CD96F000BD2E4 /* UIColor+Hex.swift in Sources */,
 				381FE55C1B816F1200F8F031 /* WOWCircleRippleButton.swift in Sources */,
 				385B68841B7CD96F000BD2E4 /* Touchable.swift in Sources */,
