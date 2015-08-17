@@ -31,20 +31,10 @@ class WOWMessageLabel: UILabel {
             self.text = message
             self.sizeToFit()
             
-            let anim = POPSpringAnimation(propertyNamed: kPOPViewScaleY)
-            anim.fromValue = NSValue(CGPoint: CGPointMake(1, 0.7))
-            anim.toValue = NSValue(CGPoint: CGPointMake(1, 1))
-            anim.springSpeed = 15
-            anim.springBounciness = 10
-            self.pop_addAnimation(anim, forKey: "")
-            
-            let anim2 = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
-            anim2.duration = 2.0
-            anim2.fromValue = 0
-            anim2.toValue = 1
-//            anim2.autoreverses = true
-//            anim2.repeatCount = 20
-            self.pop_addAnimation(anim2, forKey: "")
+            self.alpha = 0
+            UIView.animateWithDuration(0.4) { () -> Void in
+                self.alpha = 1
+            }
             
             if type == .error {
                 self.textColor = errorColor

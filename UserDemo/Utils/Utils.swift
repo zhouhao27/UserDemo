@@ -6,7 +6,7 @@
 //  Copyright © 2015 Zhou Hao. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Utility {
     class func delay(delay:Double, closure:()->()) {
@@ -27,25 +27,13 @@ class Utility {
     }
     
     class func errorText(textField : UITextField) {
-        
-        let shake = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
-        shake.springBounciness = 20
-        shake.velocity = 3000
-        
-        textField.layer.pop_addAnimation(shake, forKey: "")
-        
+                
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.1
+        animation.repeatCount = 2
+        animation.autoreverses = false
+        animation.fromValue = NSValue(CGPoint: CGPointMake(textField.center.x - 15, textField.center.y))
+        animation.toValue = NSValue(CGPoint: CGPointMake(textField.center.x + 15, textField.center.y))
+        textField.layer.addAnimation(animation, forKey: "position")
     }
 }
-
-/*
-func springConstraint(constraint : NSLayoutConstraint, animationTo: CGFloat) -> POPSpringAnimation {
-    
-    let animation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-    animation.toValue = animationTo
-    animation.springBounciness = 10 // a float between 0 and 20
-    animation.springSpeed = 6
-    constraint.pop_addAnimation(animation, forKey: "")
-    
-    return animation
-}
-*/
