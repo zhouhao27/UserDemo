@@ -11,11 +11,11 @@ import UIKit
 class RegisterViewController: UIViewController,UserViewBehavior {
 
     @IBOutlet var agreeCheckbox: WOWCheckbox!
-    @IBOutlet var registerButton: WOWActionButton!
     @IBOutlet var messageLabel: WOWMessageLabel!
     @IBOutlet var emailText: WOWTextField!
     @IBOutlet var passwordText: WOWTextField!
     @IBOutlet var confirmText: WOWTextField!
+    @IBOutlet var registerButton: WOWCircleRippleButton!
     
     var userDelegate : UserProtocol!
     
@@ -71,13 +71,18 @@ class RegisterViewController: UIViewController,UserViewBehavior {
             return
         }
         
+        if !agreeCheckbox.isChecked {
+            // TODO: animation?
+            messageLabel.errorMessage("Should agree terms and condition")
+            return
+        }
+        
         // 2. login
         self.registerButton.startAction()
         
-        // simulate login success
         Utility.delay(2.0) { () -> () in
 
-            self.registerButton.stopActionToExpand(self.view)
+            self.registerButton.stopAction(self.view, animated: true)
             self.userDelegate.onRegisterSuccess()
         }
         

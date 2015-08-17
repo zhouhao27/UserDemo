@@ -175,7 +175,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvI-7r-PZH" customClass="WOWActionButton" customModule="UserDemo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvI-7r-PZH" customClass="WOWCircleRippleButton" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="194" width="200" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.56470588239999997" blue="0.78039215689999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -188,37 +188,23 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                                        <color key="value" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorPadding">
-                                                        <real key="value" value="0.0"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleLineWidth">
+                                                        <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onLogin:" destination="Kxy-3h-6MY" eventType="touchUpInside" id="Umh-K8-EBd"/>
+                                                    <action selector="onLogin:" destination="Kxy-3h-6MY" eventType="touchUpInside" id="Rur-Jv-Hz9"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-SA-PHl">
-                                                <rect key="frame" x="96" y="18" width="124" height="30"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="24T-xu-zLG"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" horizontalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssw-wH-zyX">
-                                                <rect key="frame" x="20" y="18" width="68" height="30"/>
+                                                <rect key="frame" x="152" y="20" width="68" height="28"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="V6G-VO-MFr"/>
-                                                    <constraint firstAttribute="width" constant="68" id="kXK-6t-wje"/>
+                                                    <constraint firstAttribute="width" constant="68" id="MQ0-i3-K1F"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <state key="normal" title="&lt; Register">
+                                                <state key="normal" title="Register &gt;">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -310,40 +296,51 @@
                                                 </constraints>
                                                 <state key="normal" image="digits"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-SA-PHl">
+                                                <rect key="frame" x="20" y="18" width="124" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ZY0-iY-VkD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="nxW-s9-yWS" firstAttribute="top" secondItem="ssw-wH-zyX" secondAttribute="bottom" constant="8" id="3Vz-na-a8j"/>
                                             <constraint firstItem="HrD-wQ-CRG" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="7oZ-Hf-cVi"/>
-                                            <constraint firstItem="nxW-s9-yWS" firstAttribute="top" secondItem="ssw-wH-zyX" secondAttribute="bottom" constant="8" id="7vp-97-3uj"/>
                                             <constraint firstAttribute="bottom" secondItem="jJY-BE-56T" secondAttribute="bottom" constant="20" id="7z9-wC-a48"/>
+                                            <constraint firstItem="rVw-SA-PHl" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="9Pk-EU-iYq"/>
                                             <constraint firstItem="uvI-7r-PZH" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="BlN-ME-FVw"/>
                                             <constraint firstAttribute="trailing" secondItem="GnR-5R-1L9" secondAttribute="trailing" constant="20" symbolic="YES" id="Fc3-a4-Bxv"/>
                                             <constraint firstItem="2U9-LQ-yRf" firstAttribute="top" secondItem="uvI-7r-PZH" secondAttribute="bottom" constant="24" id="G0m-ub-F36"/>
                                             <constraint firstItem="GnR-5R-1L9" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" symbolic="YES" id="H64-Pf-RI9"/>
-                                            <constraint firstItem="rVw-SA-PHl" firstAttribute="top" secondItem="OOE-vc-bYd" secondAttribute="top" constant="18" id="Jp9-U8-pnM"/>
+                                            <constraint firstItem="rVw-SA-PHl" firstAttribute="top" secondItem="OOE-vc-bYd" secondAttribute="top" constant="18" id="JGc-cT-soC"/>
                                             <constraint firstAttribute="trailing" secondItem="nxW-s9-yWS" secondAttribute="trailing" constant="20" id="Lak-rF-6QP"/>
+                                            <constraint firstItem="ssw-wH-zyX" firstAttribute="leading" secondItem="rVw-SA-PHl" secondAttribute="trailing" constant="8" id="Nnk-CA-ilL"/>
                                             <constraint firstItem="GnR-5R-1L9" firstAttribute="top" secondItem="nxW-s9-yWS" secondAttribute="bottom" constant="20" id="NuU-4G-0FI"/>
                                             <constraint firstAttribute="trailing" secondItem="jJY-BE-56T" secondAttribute="trailing" constant="20" id="RqI-OZ-r2j"/>
                                             <constraint firstItem="2U9-LQ-yRf" firstAttribute="leading" secondItem="TbT-qn-ZUM" secondAttribute="trailing" constant="8" id="SG8-Wp-yWz"/>
                                             <constraint firstItem="nxW-s9-yWS" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="Uh5-kq-UgQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="rVw-SA-PHl" secondAttribute="trailing" constant="20" id="V1c-uE-cFJ"/>
+                                            <constraint firstItem="ssw-wH-zyX" firstAttribute="top" secondItem="OOE-vc-bYd" secondAttribute="top" constant="20" id="WSX-SM-YEG"/>
                                             <constraint firstItem="uvI-7r-PZH" firstAttribute="top" secondItem="HrD-wQ-CRG" secondAttribute="bottom" constant="20" id="YKO-9w-4kr"/>
+                                            <constraint firstAttribute="trailing" secondItem="ssw-wH-zyX" secondAttribute="trailing" constant="20" id="Zfr-mU-9tw"/>
                                             <constraint firstAttribute="trailing" secondItem="HrD-wQ-CRG" secondAttribute="trailing" constant="20" id="aWn-jE-Aqb"/>
                                             <constraint firstItem="TbT-qn-ZUM" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="efG-Eb-kXv"/>
                                             <constraint firstItem="jJY-BE-56T" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dtq-vj-8K0" secondAttribute="bottom" constant="20" id="fCJ-Zn-cHK"/>
                                             <constraint firstAttribute="trailing" secondItem="GnR-5R-1L9" secondAttribute="trailing" constant="20" id="feI-g9-KnP"/>
-                                            <constraint firstItem="rVw-SA-PHl" firstAttribute="leading" secondItem="ssw-wH-zyX" secondAttribute="trailing" constant="8" id="hCd-7r-MCY"/>
                                             <constraint firstAttribute="trailing" secondItem="uvI-7r-PZH" secondAttribute="trailing" constant="20" id="jFt-9X-maK"/>
                                             <constraint firstItem="Dtq-vj-8K0" firstAttribute="leading" secondItem="2U9-LQ-yRf" secondAttribute="trailing" constant="8" id="juQ-Fv-O88"/>
                                             <constraint firstItem="Q3l-I1-woR" firstAttribute="leading" secondItem="Dtq-vj-8K0" secondAttribute="trailing" constant="8" id="kTG-lC-GhG"/>
-                                            <constraint firstItem="ssw-wH-zyX" firstAttribute="top" secondItem="OOE-vc-bYd" secondAttribute="top" constant="18" id="nTx-UG-S54"/>
                                             <constraint firstItem="Dtq-vj-8K0" firstAttribute="top" secondItem="uvI-7r-PZH" secondAttribute="bottom" constant="24" id="oEz-nb-IWs"/>
                                             <constraint firstItem="HrD-wQ-CRG" firstAttribute="top" secondItem="GnR-5R-1L9" secondAttribute="bottom" constant="8" id="pQs-6p-W8M"/>
                                             <constraint firstItem="Q3l-I1-woR" firstAttribute="top" secondItem="uvI-7r-PZH" secondAttribute="bottom" constant="24" id="rPv-AH-AIT"/>
                                             <constraint firstItem="GnR-5R-1L9" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="uvY-QW-pCW"/>
-                                            <constraint firstItem="ssw-wH-zyX" firstAttribute="leading" secondItem="OOE-vc-bYd" secondAttribute="leading" constant="20" id="yV5-aZ-8Vu"/>
                                             <constraint firstItem="TbT-qn-ZUM" firstAttribute="top" secondItem="uvI-7r-PZH" secondAttribute="bottom" constant="24" id="ygj-Qd-kx0"/>
+                                            <constraint firstItem="ssw-wH-zyX" firstAttribute="leading" secondItem="rVw-SA-PHl" secondAttribute="trailing" constant="8" id="yx3-dg-G5V"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -371,14 +368,14 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="emailText" destination="GnR-5R-1L9" id="EHZ-MT-KMR"/>
-                        <outlet property="loginButton" destination="uvI-7r-PZH" id="TVD-RP-Pfr"/>
+                        <outlet property="loginButton" destination="uvI-7r-PZH" id="MQ6-jN-Mbf"/>
                         <outlet property="messageLabel" destination="nxW-s9-yWS" id="ZC9-Ba-e7y"/>
                         <outlet property="passwordText" destination="HrD-wQ-CRG" id="lfK-uh-HsB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLa-Gc-c7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1492" y="460"/>
+            <point key="canvasLocation" x="1220" y="-90"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rMr-UD-f81">
@@ -511,7 +508,7 @@
                                                     <action selector="onLogin:" destination="upD-D1-Xhb" eventType="touchUpInside" id="U4z-qA-INR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwE-FJ-Omo" customClass="WOWActionButton" customModule="UserDemo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwE-FJ-Omo" customClass="WOWCircleRippleButton" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="253" width="82" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -523,18 +520,15 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Register"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorPadding">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                                        <color key="value" red="0.0" green="0.56470588239999997" blue="0.78039215689999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleLineWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="onRegister:" destination="upD-D1-Xhb" eventType="touchUpInside" id="GBz-8F-xhb"/>
+                                                    <action selector="onRegister:" destination="upD-D1-Xhb" eventType="touchUpInside" id="CVt-TP-64c"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cW5-nR-ncA" customClass="WOWCheckbox" customModule="UserDemo" customModuleProvider="target">
@@ -617,12 +611,12 @@
                         <outlet property="emailText" destination="l5A-iZ-NRb" id="bA6-vp-b1l"/>
                         <outlet property="messageLabel" destination="vhe-Ea-gEo" id="Fjr-wS-dGH"/>
                         <outlet property="passwordText" destination="Ofb-no-MTs" id="GYF-lt-gde"/>
-                        <outlet property="registerButton" destination="ZwE-FJ-Omo" id="FbQ-sr-34N"/>
+                        <outlet property="registerButton" destination="ZwE-FJ-Omo" id="IXc-Wi-yOf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLx-QK-7iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1390" y="1153"/>
+            <point key="canvasLocation" x="1047" y="1203"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="0j2-0y-DUr">
@@ -646,7 +640,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvL-QZ-Zfv" customClass="WOWActionButton" customModule="UserDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvL-QZ-Zfv" customClass="WOWCircleRippleButton" customModule="UserDemo" customModuleProvider="target">
                                 <rect key="frame" x="41" y="140" width="159" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.56470588239999997" blue="0.78039215689999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -657,18 +651,15 @@
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Logout"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                        <color key="value" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorPadding">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onLogout:" destination="Cbi-ZW-xOD" eventType="touchUpInside" id="d2o-Cw-7bv"/>
+                                    <action selector="onLogout:" destination="Cbi-ZW-xOD" eventType="touchUpInside" id="lXg-TL-LWl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom to WOWtv!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dT-hk-Hur">
@@ -708,12 +699,12 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="logoutButton" destination="QvL-QZ-Zfv" id="T36-D0-BQF"/>
+                        <outlet property="logoutButton" destination="QvL-QZ-Zfv" id="azC-5Z-Lbm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZC-AT-EqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="1201"/>
+            <point key="canvasLocation" x="795" y="1203"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="VEh-d0-Btm">
@@ -736,7 +727,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="&lt; Login"/>
                                 <connections>
-                                    <action selector="onLogin:" destination="oPd-jc-bey" eventType="touchUpInside" id="hWV-PJ-j4w"/>
+                                    <action selector="onLogin:" destination="oPd-jc-bey" eventType="touchUpInside" id="8k2-aY-l2i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JA-fL-TKp">
@@ -779,7 +770,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D47-Lg-1wU" customClass="WOWActionButton" customModule="UserDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D47-Lg-1wU" customClass="WOWCircleRippleButton" customModule="UserDemo" customModuleProvider="target">
                                 <rect key="frame" x="20" y="131" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -788,13 +779,16 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Reset Password"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorPadding">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onReset:" destination="oPd-jc-bey" eventType="touchUpInside" id="vrA-qT-IaF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -815,10 +809,15 @@
                             <constraint firstAttribute="trailing" secondItem="KC1-2h-rB6" secondAttribute="trailing" constant="20" id="uDj-m9-eyQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="GCu-AT-A00" id="NyF-lM-5Rt"/>
+                        <outlet property="messageLabel" destination="KC1-2h-rB6" id="ifI-V5-kxt"/>
+                        <outlet property="resetButton" destination="D47-Lg-1wU" id="F3o-Pb-wKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJ4-QW-jvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216" y="46"/>
+            <point key="canvasLocation" x="1220" y="555"/>
         </scene>
     </scenes>
     <resources>

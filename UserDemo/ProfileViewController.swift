@@ -10,8 +10,9 @@ import UIKit
 
 class ProfileViewController: UIViewController,UserViewBehavior {
 
-    @IBOutlet var logoutButton: WOWActionButton!
+//    @IBOutlet var logoutButton: WOWActionButton!
     var userDelegate : UserProtocol!
+    @IBOutlet var logoutButton: WOWCircleRippleButton!
     
     override func viewDidLoad() {
         
@@ -27,8 +28,9 @@ class ProfileViewController: UIViewController,UserViewBehavior {
         self.logoutButton.startAction()
         
         // simulate login success
-        Utility.delay(1.0) { () -> () in
-            self.logoutButton.stopActionToExpand(self.view)
+        Utility.delay(2.0) { () -> () in
+            //self.logoutButton.stopActionToExpand(self.view)
+            self.logoutButton.stopAction(self.view, animated: true)
             self.userDelegate.onLogout()
         }
     }

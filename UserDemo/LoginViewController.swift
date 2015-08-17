@@ -10,9 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController,UserViewBehavior {
 
-    @IBOutlet var loginButton: WOWActionButton!
     var userDelegate : UserProtocol!
     
+    @IBOutlet var loginButton: WOWCircleRippleButton!
     @IBOutlet weak var messageLabel: WOWMessageLabel!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -57,7 +57,7 @@ class LoginViewController: UIViewController,UserViewBehavior {
         // simulate login success
         Utility.delay(2.0) { () -> () in
             
-            self.loginButton.stopActionToExpand(self.view)
+            self.loginButton.stopAction(self.view, animated: true)
             self.userDelegate.onLoginSuccess()
         }
     }

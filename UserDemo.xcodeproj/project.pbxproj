@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381FE55C1B816F1200F8F031 /* WOWCircleRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */; };
+		381FE55E1B816F2B00F8F031 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55D1B816F2B00F8F031 /* GCD.swift */; };
+		381FE5601B816F4000F8F031 /* CAAnimation+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55F1B816F4000F8F031 /* CAAnimation+Closure.swift */; };
 		385B685C1B7CD82C000BD2E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B685B1B7CD82C000BD2E4 /* AppDelegate.swift */; };
 		385B685E1B7CD82C000BD2E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B685D1B7CD82C000BD2E4 /* ViewController.swift */; };
 		385B68611B7CD82C000BD2E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385B685F1B7CD82C000BD2E4 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWCircleRippleButton.swift; path = ../../../WOWCircleRipple/CircleRipple/WOWCircleRippleButton.swift; sourceTree = "<group>"; };
+		381FE55D1B816F2B00F8F031 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCD.swift; path = ../../../WOWCircleRipple/CircleRipple/GCD.swift; sourceTree = "<group>"; };
+		381FE55F1B816F4000F8F031 /* CAAnimation+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CAAnimation+Closure.swift"; path = "../../../WOWCircleRipple/CircleRipple/CAAnimation+Closure.swift"; sourceTree = "<group>"; };
 		385B68581B7CD82C000BD2E4 /* UserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385B685B1B7CD82C000BD2E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385B685D1B7CD82C000BD2E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 				385B686D1B7CD922000BD2E4 /* LoginViewController.swift */,
 				385B686E1B7CD922000BD2E4 /* ProfileViewController.swift */,
 				385B686F1B7CD922000BD2E4 /* RegisterViewController.swift */,
+				38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */,
 				385B68701B7CD922000BD2E4 /* UserViewController.swift */,
 				385B685B1B7CD82C000BD2E4 /* AppDelegate.swift */,
 				385B685D1B7CD82C000BD2E4 /* ViewController.swift */,
@@ -182,7 +189,6 @@
 				385B68621B7CD82C000BD2E4 /* Assets.xcassets */,
 				385B68641B7CD82C000BD2E4 /* LaunchScreen.storyboard */,
 				385B68671B7CD82C000BD2E4 /* Info.plist */,
-				38BE77F11B7DE1A300F76D9C /* ResetPasswordViewController.swift */,
 			);
 			path = UserDemo;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 		385B68751B7CD96F000BD2E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */,
 				38BE77EB1B7DA73500F76D9C /* WOWActionButton.swift */,
 				38BE77E91B7DA72A00F76D9C /* WOWActivityIndicator.swift */,
 				38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */,
@@ -204,6 +211,8 @@
 		385B688A1B7CDA53000BD2E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				381FE55F1B816F4000F8F031 /* CAAnimation+Closure.swift */,
+				381FE55D1B816F2B00F8F031 /* GCD.swift */,
 				385B688B1B7CDA53000BD2E4 /* UIView+ViewController.swift */,
 				385B688C1B7CDA53000BD2E4 /* UIViewController+ChildViewController.swift */,
 				385B688D1B7CDA53000BD2E4 /* Utils.swift */,
@@ -370,6 +379,7 @@
 				385B688E1B7CDA53000BD2E4 /* UIView+ViewController.swift in Sources */,
 				385B69141B7CDA73000BD2E4 /* POPPropertyAnimation.mm in Sources */,
 				385B69081B7CDA73000BD2E4 /* POPAnimationEvent.mm in Sources */,
+				381FE55E1B816F2B00F8F031 /* GCD.swift in Sources */,
 				385B68871B7CD9A2000BD2E4 /* ActionViewController.swift in Sources */,
 				385B68741B7CD922000BD2E4 /* UserViewController.swift in Sources */,
 				385B69071B7CDA73000BD2E4 /* POPAnimation.mm in Sources */,
@@ -389,6 +399,7 @@
 				385B69091B7CDA73000BD2E4 /* POPAnimationExtras.mm in Sources */,
 				385B69131B7CDA73000BD2E4 /* POPMath.mm in Sources */,
 				385B69171B7CDA73000BD2E4 /* TransformationMatrix.cpp in Sources */,
+				381FE55C1B816F1200F8F031 /* WOWCircleRippleButton.swift in Sources */,
 				385B690C1B7CDA73000BD2E4 /* POPAnimator.mm in Sources */,
 				385B690B1B7CDA73000BD2E4 /* POPAnimationTracer.mm in Sources */,
 				385B69061B7CDA73000BD2E4 /* POPAnimatableProperty.mm in Sources */,
@@ -397,6 +408,7 @@
 				38BE77EA1B7DA72A00F76D9C /* WOWActivityIndicator.swift in Sources */,
 				385B68831B7CD96F000BD2E4 /* PositionToBoundsMapping.swift in Sources */,
 				385B68841B7CD96F000BD2E4 /* Touchable.swift in Sources */,
+				381FE5601B816F4000F8F031 /* CAAnimation+Closure.swift in Sources */,
 				385B69151B7CDA73000BD2E4 /* POPSpringAnimation.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,30 +12,59 @@ class ResetPasswordViewController: UIViewController,UserViewBehavior {
     
     var userDelegate : UserProtocol!
     
+    @IBOutlet var resetButton: WOWCircleRippleButton!
+    @IBOutlet var emailText: WOWTextField!
+    @IBOutlet var messageLabel: WOWMessageLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.emailText.addTarget(self, action: "startEditing:", forControlEvents: .EditingChanged)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func reset() {
+        
+        emailText.text = ""
+        messageLabel.errorMessage("")
+        resetButton.reset()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func onLogin(sender: AnyObject) {
+    @IBAction func onReset(sender: AnyObject) {
         
-        userDelegate.onSwitchToLoginFromResetPassword()
+        // validate
+        // 1. validting
+        if emailText.text == nil || emailText.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 {
+            
+            Utility.errorText(emailText)
+            messageLabel.errorMessage("Need email")
+            return
+        }
+        
+        if !Utility.isValidEmail(emailText.text!) {
+            
+            messageLabel.errorMessage("Invalid email")
+            Utility.errorText(emailText)
+            return
+        }
+        
+        self.resetButton.startAction()
+        Utility.delay(2.0) { () -> () in
+            
+            self.resetButton.stopAction(self.view, animated: true)
+            self.userDelegate.onReset()
+        }
+        
     }
 
+    @IBAction func onLogin(sender: AnyObject) {
+        self.userDelegate.onSwitchToLoginFromResetPassword()
+    }
+    
+    func startEditing(textField : UITextField) {
+        
+        if textField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 {
+            messageLabel.errorMessage("")
+        }
+    }
+    
 }
