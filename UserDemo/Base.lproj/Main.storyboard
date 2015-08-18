@@ -152,6 +152,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="GnR-5R-1L9" customClass="WOWTextField" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="76" width="200" height="45"/>
                                                 <animations/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="9Qu-gD-LZG"/>
                                                 </constraints>
@@ -240,6 +241,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrD-wQ-CRG" customClass="WOWTextField" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="129" width="200" height="45"/>
                                                 <animations/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="U6N-1D-U0a"/>
                                                 </constraints>

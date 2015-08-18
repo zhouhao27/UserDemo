@@ -10,7 +10,6 @@ import UIKit
 
 class ProfileViewController: UIViewController,UserViewBehavior {
 
-//    @IBOutlet var logoutButton: WOWActionButton!
     var userDelegate : UserProtocol!
     @IBOutlet var logoutButton: WOWCircleRippleButton!
     
@@ -22,9 +21,6 @@ class ProfileViewController: UIViewController,UserViewBehavior {
     
     @IBAction func onLogout(sender: AnyObject) {
         
-        // 1. validting
-        
-        // 2. login
         self.logoutButton.startAction()
         
         // simulate login success

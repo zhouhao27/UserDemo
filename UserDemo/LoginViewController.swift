@@ -14,8 +14,8 @@ class LoginViewController: UIViewController,UserViewBehavior {
     
     @IBOutlet var loginButton: WOWCircleRippleButton!
     @IBOutlet weak var messageLabel: WOWMessageLabel!
-    @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var emailText: WOWTextField!
+    @IBOutlet weak var passwordText: WOWTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
