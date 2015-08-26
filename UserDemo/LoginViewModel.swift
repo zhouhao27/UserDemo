@@ -9,31 +9,10 @@
 import Foundation
 
 class LoginViewModel {
-
-    typealias LoginCallback = (user : User?, error : NSError?) -> Void
     
-    func login(email : String, password : String, callback : LoginCallback) {
+    func login(email : String, password : String, callback : UserManagementService.CompleteCallback) {
         
-        // call service
-        GCD.delay(2) { () -> () in
-            
-            if email == "a@a" && password == "password" {
-                
-                let user = User()
-                user.email = email
-                user.password = password
-                user.gender = .Male
-                user.age = 32
-                
-                callback(user: user, error: nil)
-                
-            } else {
-                
-                // TODO: Error code and description from server
-                let error = NSError(domain: "com.wowtv", code: 1001, userInfo: [ NSLocalizedDescriptionKey : "Failed to login" ])
-                callback(user: nil, error: error)
-            }
-        }
+        UserManagementService.sharedInstance.login(email, password: password, callback: callback)
     }
 
 }

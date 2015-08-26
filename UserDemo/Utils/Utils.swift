@@ -26,6 +26,14 @@ class Utility {
         return emailTest.evaluateWithObject(testStr)
     }
     
+    class func isValidPhoneNumber(phoneNumber : String) -> Bool {
+        
+        let regEx = "^((\\+)|(00))[0-9]{6,14}$"
+        
+        let phoneText = NSPredicate(format:"SELF MATCHES %@", regEx)
+        return phoneText.evaluateWithObject(phoneText)
+    }
+    
     class func errorText(textField : UITextField) {
 
 /*

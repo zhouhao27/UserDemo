@@ -67,4 +67,12 @@ class ResetPasswordViewController: UIViewController,UserViewBehavior {
         }
     }
     
+    // MARK: Implementation of UserBehavior protocol
+    func activate() {
+        
+    }
+    
+    func deactivate() {
+        
+    }    
 }

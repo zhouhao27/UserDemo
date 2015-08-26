@@ -15,7 +15,7 @@ protocol UserProtocol {
     func onSwitchToResetPassword()
     func onSwitchToLoginFromResetPassword()
     
-    func onLoginSuccess(user : User)
+    func onLoginSuccess()
     func onRegisterSuccess()
     func onLogout()
     func onReset()
@@ -24,6 +24,9 @@ protocol UserProtocol {
 
 protocol UserViewBehavior {
     var userDelegate : UserProtocol! { get set}
+    
+    func activate()
+    func deactivate()
 }
 
 class UserViewController: ActionViewController, UserProtocol {
@@ -87,8 +90,11 @@ class UserViewController: ActionViewController, UserProtocol {
         
     }
     
-    func onLoginSuccess(user : User) {
-
+    func onLoginSuccess() {
+        
+        self.profileController.activate()
+        self.loginController.deactivate()
+        
         let frame = self.profileController.view.frame
 
         UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.5, options: .CurveEaseInOut, animations: { () -> Void in

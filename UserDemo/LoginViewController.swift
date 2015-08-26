@@ -74,7 +74,7 @@ class LoginViewController: UIViewController,UserViewBehavior {
             self.loginButton.startAction()
             
             // simulate login success
-            self.loginViewModel.login(self.emailText.text!, password: self.passwordText.text!, callback: { (user, error) -> Void in
+            self.loginViewModel.login(self.emailText.text!, password: self.passwordText.text!, callback: { (success, error) -> Void in
                 
                 self.loginButton.stopAction(self.view, animated: true)
                 
@@ -82,7 +82,7 @@ class LoginViewController: UIViewController,UserViewBehavior {
                     self.messageLabel.errorMessage(error!.localizedDescription)
                     self.loginButton.reset()
                 } else {
-                    self.userDelegate.onLoginSuccess(user!)
+                    self.userDelegate.onLoginSuccess()
                 }
             })
         }
@@ -97,6 +97,15 @@ class LoginViewController: UIViewController,UserViewBehavior {
     @IBAction func onResetPassword(sender: AnyObject) {
         
         self.userDelegate.onSwitchToResetPassword()
+    }
+    
+    // MARK: Implementation of UserBehavior protocol
+    func activate() {
+        
+    }
+    
+    func deactivate() {
+        
     }
     
     func reset() {

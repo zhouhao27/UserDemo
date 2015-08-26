@@ -23,6 +23,7 @@ class RegisterViewController: UIViewController,UserViewBehavior {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.darkTextColor().colorWithAlphaComponent(0.6)
+        
         self.emailText.addTarget(self, action: "startEditing:", forControlEvents: .EditingChanged)
         self.passwordText.addTarget(self, action: "startEditing:", forControlEvents: .EditingChanged)
         self.confirmText.addTarget(self, action: "startEditing:", forControlEvents: .EditingChanged)
@@ -85,6 +86,15 @@ class RegisterViewController: UIViewController,UserViewBehavior {
             self.registerButton.stopAction(self.view, animated: true)
             self.userDelegate.onRegisterSuccess()
         }
+        
+    }
+    
+    // MARK: Implementation of UserBehavior protocol
+    func activate() {
+        
+    }
+    
+    func deactivate() {
         
     }
     
