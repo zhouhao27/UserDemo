@@ -15,7 +15,7 @@ protocol UserProtocol {
     func onSwitchToResetPassword()
     func onSwitchToLoginFromResetPassword()
     
-    func onLoginSuccess()
+    func onLoginSuccess(user : User)
     func onRegisterSuccess()
     func onLogout()
     func onReset()
@@ -87,7 +87,7 @@ class UserViewController: ActionViewController, UserProtocol {
         
     }
     
-    func onLoginSuccess() {
+    func onLoginSuccess(user : User) {
 
         let frame = self.profileController.view.frame
 

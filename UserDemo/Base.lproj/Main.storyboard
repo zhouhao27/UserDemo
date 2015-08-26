@@ -152,7 +152,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="GnR-5R-1L9" customClass="WOWTextField" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="76" width="200" height="45"/>
                                                 <animations/>
-                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="9Qu-gD-LZG"/>
                                                 </constraints>
@@ -193,9 +193,6 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="onLogin:" destination="Kxy-3h-6MY" eventType="touchUpInside" id="Rur-Jv-Hz9"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" horizontalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssw-wH-zyX">
                                                 <rect key="frame" x="152" y="20" width="68" height="28"/>
@@ -241,7 +238,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrD-wQ-CRG" customClass="WOWTextField" customModule="UserDemo" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="129" width="200" height="45"/>
                                                 <animations/>
-                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="U6N-1D-U0a"/>
                                                 </constraints>
