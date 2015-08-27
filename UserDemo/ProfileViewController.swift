@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController,UserViewBehavior {
+class ProfileViewController: WOWAutolayoutScrollViewController,UserViewBehavior {
 
     var userDelegate : UserProtocol!
     @IBOutlet var logoutButton: WOWCircleRippleButton!

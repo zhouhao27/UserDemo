@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38188D871B8EB436002A4FAC /* WOWAutolayoutScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38188D861B8EB436002A4FAC /* WOWAutolayoutScrollViewController.swift */; };
 		381FE55C1B816F1200F8F031 /* WOWCircleRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */; };
 		381FE55E1B816F2B00F8F031 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55D1B816F2B00F8F031 /* GCD.swift */; };
 		381FE5601B816F4000F8F031 /* CAAnimation+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FE55F1B816F4000F8F031 /* CAAnimation+Closure.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38188D861B8EB436002A4FAC /* WOWAutolayoutScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWAutolayoutScrollViewController.swift; sourceTree = "<group>"; };
 		381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WOWCircleRippleButton.swift; path = ../../../WOWCircleRipple/CircleRipple/WOWCircleRippleButton.swift; sourceTree = "<group>"; };
 		381FE55D1B816F2B00F8F031 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCD.swift; path = ../../../WOWCircleRipple/CircleRipple/GCD.swift; sourceTree = "<group>"; };
 		381FE55F1B816F4000F8F031 /* CAAnimation+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CAAnimation+Closure.swift"; path = "../../../WOWCircleRipple/CircleRipple/CAAnimation+Closure.swift"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				38C0AE671B819CCB00CD01F7 /* UITextField+Shake.swift */,
+				38188D861B8EB436002A4FAC /* WOWAutolayoutScrollViewController.swift */,
 				381FE55B1B816F1200F8F031 /* WOWCircleRippleButton.swift */,
 				38BE77E71B7D8E6D00F76D9C /* WOWTextField.swift */,
 				38BE77E51B7D8E0700F76D9C /* WOWCheckbox.swift */,
@@ -413,6 +416,7 @@
 				385B68721B7CD922000BD2E4 /* ProfileViewController.swift in Sources */,
 				38760BF91B8C72D300FF0343 /* OptionalType.swift in Sources */,
 				38BE77EE1B7DBD2900F76D9C /* WOWMessageLabel.swift in Sources */,
+				38188D871B8EB436002A4FAC /* WOWAutolayoutScrollViewController.swift in Sources */,
 				38760C091B8C72D300FF0343 /* UITableView+Bond.swift in Sources */,
 				385B685C1B7CD82C000BD2E4 /* AppDelegate.swift in Sources */,
 				38760C031B8C72D300FF0343 /* UILabel+Bond.swift in Sources */,
